@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --bg-color: #FFFFFF;
+  --bg-image: url("../images/background.png");
+  --font-button: "Press Start 2P";
+  --font-header: "Press Start 2P";
+  --font-dialog: "Press Start 2P";
+  --header-font-weight: 400;
+  --header-font-size: 65px;
+  --header-content-font-size: 23px;
+  --header-color: #000;
+  --header-bg-color: #fff;
+  --font-content: Inter;
+  --content-font-weight: 700;
+  --content-font-size: 18px;
+  --title-font-weight: 700;
+  --title-font-size: 18px;
+}

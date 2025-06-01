@@ -13,4 +13,21 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: var(--bg-image);
+}
+
+.header {
+  background-color: var(--bg-color);
+  margin: 100px 370px;
+}
+
+.header__title {
+  font-size: var(--header-font-size);
+  font-family: var(--font-header);
+  font-weight: var(--header-font-weight);
+  color: var(--header-color);
+
 }
