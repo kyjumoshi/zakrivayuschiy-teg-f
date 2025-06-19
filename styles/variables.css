@@ -2,17 +2,22 @@
 :root {
   --bg-color: #FFFFFF;
   --bg-image: url("../images/background.png");
-  --font-button: "Press Start 2P";
-  --font-header: "Press Start 2P";
-  --font-dialog: "Press Start 2P";
+  --font-button: "PressStart2P";
+  --font-header: "PressStart2P";
+  --font-dialog: "PressStart2P";
   --header-font-weight: 400;
   --header-font-size: 65px;
   --header-content-font-size: 23px;
   --header-color: #000;
+  --content-color: #000;
+  --border-color:#000;
   --header-bg-color: #fff;
-  --font-content: Inter;
-  --content-font-weight: 700;
+  --content-bg-color: #fff;
+  --font-content: "Inter-Variable";
+  --content-font-weight: 400;
   --content-font-size: 18px;
   --title-font-weight: 700;
   --title-font-size: 18px;
+  --button-font-size: 14px:
+  --button-font-weight: 400;
 }

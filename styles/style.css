@@ -21,13 +21,112 @@
 
 .header {
   background-color: var(--bg-color);
-  margin: 100px 370px;
+  border: solid 2px var(--border-color);
+  margin-top: 100px;
+  margin-left: 372px;
+  margin-right: 372px;
+  margin-bottom: 100px;
+  max-width: 1440px;
 }
 
 .header__title {
   font-size: var(--header-font-size);
-  font-family: var(--font-header);
+  font-family: var(--font-header), sans-serif;
   font-weight: var(--header-font-weight);
   color: var(--header-color);
+  margin-top: 128px;
+  margin-left: 119px;
+}
 
+.header__content {
+  font-size: var(--header-content-font-size);
+  font-family: var(--font-header), sans-serif;
+  font-weight: var(--header-font-weight);
+  color: var(--header-color);
+  margin-top: 20px;
+  margin-left: 174px;
+  margin-bottom: 127px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.card {
+  margin-left: 370px;
+  margin-right: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.content__title {
+  font-family: var(--font-content), sans-serif;
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  color: var(--content-color);
+  background-color: var(--content-bg-color);
+  border-right: solid 2px var(--border-color);
+  border-left: solid 2px var(--border-color);
+  border-top: solid 2px var(--border-color);
+  line-height: 100%;
+  padding-top: 7px;
+  padding-left: 11px;
+  padding-bottom: 4px;
+}
+
+.bus__img {
+}
+
+.description {
+  background-color: var(--content-bg-color);
+  border-left: solid 2px var(--border-color);
+  border-bottom: solid 2px var(--border-color);
+  border-right: solid 2px var(--border-color);
+}
+
+.description__text {
+  font-family: var(--font-content), sans-serif;
+  font-size: var(--content-font-size);
+  font-weight: var(--content-font-weight);
+  color: var(--content-color);
+  padding-top: 27px;
+  padding-left: 25px;
+}
+.comment {
+  font-family: var(--font-content), sans-serif;
+  font-size: var(--content-font-size);
+  font-weight: var(--content-font-weight);
+  color: var(--content-color);
+  padding-top: 27px;
+  padding-left: 25px;
+}
+
+.like__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 24px;
+  margin-right: 25px;
+  margin-bottom: 18px;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+}
+
+.like-icon {
+}
+
+.card__like-button {
+  font-family: var(--font-button);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  background-color: transparent;
+  padding: 10px 31px;
+  margin-top: 1px;
+  margin-bottom: 4px;
 }
