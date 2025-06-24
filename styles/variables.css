@@ -5,19 +5,23 @@
   --font-button: "PressStart2P";
   --font-header: "PressStart2P";
   --font-dialog: "PressStart2P";
+  --font-lable: "PressStart2P";
+  --lable-font-weight: 400;
   --header-font-weight: 400;
   --header-font-size: 65px;
   --header-content-font-size: 23px;
+  --lable-font-size: 14px;
   --header-color: #000;
   --content-color: #000;
   --border-color:#000;
   --header-bg-color: #fff;
   --content-bg-color: #fff;
+  --button-bg-color: #fff;
   --font-content: "Inter-Variable";
   --content-font-weight: 400;
   --content-font-size: 18px;
   --title-font-weight: 700;
   --title-font-size: 18px;
-  --button-font-size: 14px:
+  --button-font-size: 14px;
   --button-font-weight: 400;
 }
