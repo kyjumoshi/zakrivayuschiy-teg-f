@@ -6,10 +6,12 @@
   --font-header: "PressStart2P";
   --font-dialog: "PressStart2P";
   --font-lable: "PressStart2P";
+  --font-dialog: "PressStart2P";
+  --dialog-font-weight: 400;
   --lable-font-weight: 400;
   --header-font-weight: 400;
-  --header-font-size: 65px;
-  --header-content-font-size: 23px;
+  --header-font-size: clamp(49px, 5vw, 65px);
+  --header-content-font-size: clamp(14px, 3vw, 23px);
   --lable-font-size: 14px;
   --header-color: #000;
   --content-color: #000;
@@ -22,6 +24,7 @@
   --content-font-size: 18px;
   --title-font-weight: 700;
   --title-font-size: 18px;
+  --dialog-font-size: 14px;
   --button-font-size: 14px;
   --button-font-weight: 400;
 }

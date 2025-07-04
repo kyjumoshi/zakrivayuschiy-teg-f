@@ -17,49 +17,57 @@
   background-size: cover;
   background-attachment: fixed;
   background-image: var(--bg-image);
-}
-
-.header {
   display: flex;
-  background-color: var(--bg-color);
-  border: solid 2px var(--border-color);
-  margin-top: 103px;
-  margin-left: 25.8vw;
-  margin-right: 25.8vw;
-  margin-bottom: 102px;
   flex-direction: column;
   align-items: center;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-color);
+  border: solid 2px var(--border-color);
+  margin: 100px 0px;
+}
+
 .header__title {
   font-size: var(--header-font-size);
-  font-family: var(--font-header), sans-serif;
+  font-family: var(--font-header);
   font-weight: var(--header-font-weight);
   color: var(--header-color);
-  margin-top: 128px;
+  margin: 120px 14px 0px 14px;
 }
 
 .header__content {
   font-size: var(--header-content-font-size);
-  font-family: var(--font-header), sans-serif;
+  font-family: var(--font-header);
   font-weight: var(--header-font-weight);
   color: var(--header-color);
   margin-top: 20px;
-  margin-bottom: 127px;
+  margin-bottom: 120px;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  gap: 51px;
+  align-items: center;
 }
 
 .card {
-  margin-left: 25.8vw;
-  margin-right: 25.8vw;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  margin-bottom: 51px;
+}
+
+.content__title {
+  font-size: var(--title-font-size);
+  font-family: var(--font-content);
+  font-weight: var(--title-font-weight);
+  background: var(--content-bg-color);
+  color: var(--content-color);
+  border: solid 2px var(--border-color);
+  padding: 6px 10px 4px 10px;
 }
 
 .bus__container {
@@ -68,79 +76,56 @@
 
 .label {
   position: absolute;
-  font-size: var(--lable-font-size);
   font-family: var(--font-lable);
+  font-size: var(--lable-font-size);
   font-weight: var(--lable-font-weight);
-  right: 26px;
-  top: 29px;
-  mix-blend-mode: hard-light;
   color: var(--content-color);
-  text-shadow: 0px 0px 3px #ffffff;
+  text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff;
+  mix-blend-mode: hard-light;
+  right: 12px;
+  top: 24px;
 }
 
 .bus__img {
+  width: 100%;
+  height: 100%;
   display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.content__title {
-  font-family: var(--font-content), sans-serif;
-  font-size: var(--title-font-size);
-  font-weight: var(--title-font-weight);
-  color: var(--content-color);
-  background-color: var(--content-bg-color);
-  border-right: solid 2px var(--border-color);
-  border-left: solid 2px var(--border-color);
-  border-top: solid 2px var(--border-color);
-  line-height: 100%;
-  padding-top: 7px;
-  padding-left: 11px;
-  padding-bottom: 4px;
 }
 
 .description {
-  background-color: var(--content-bg-color);
+  background: var(--content-bg-color);
   border-left: solid 2px var(--border-color);
-  border-bottom: solid 2px var(--border-color);
   border-right: solid 2px var(--border-color);
+  border-bottom: solid 2px var(--border-color);
 }
 
 .description__text {
-  font-family: var(--font-content), sans-serif;
   font-size: var(--content-font-size);
+  font-family: var(--font-content);
   font-weight: var(--content-font-weight);
-  color: var(--content-color);
-  padding-top: 29px;
-  padding-left: 25px;
-  padding-right: 24px;
+  padding: 23px 25px 27px 25px;
 }
 
 .comment {
-  font-family: var(--font-content), sans-serif;
   font-size: var(--content-font-size);
+  font-family: var(--font-content);
   font-weight: var(--content-font-weight);
-  color: var(--content-color);
-  padding-top: 27px;
-  padding-left: 25px;
+  padding: 0px 25px 25px 25px;
 }
 
 .like__buttons {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 24px;
-  margin-right: 25px;
-  margin-bottom: 18px;
-  gap: 24px;
+  margin-right: 23px;
+  margin-bottom: 20px;
 }
 
 .card__icon-button {
   background-color: transparent;
   border: none;
-  width: 27px;
-  height: 24px;
-  margin-top: 2px;
+  cursor: pointer;
+  padding-right: 4px;
 }
 
 .card__like-button {
@@ -148,35 +133,112 @@
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   background-color: transparent;
-  padding: 10px 35px;
-  margin-top: 3px;
-  margin-bottom: 4px;
+  padding-left: 37px;
+  padding-right: 37px;
+  cursor: pointer;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 51px;
-  margin-bottom: 105px;
+  margin-bottom: 102px;
 }
 
 .dialog__button {
   display: flex;
   border: 2px solid var(--border-color);
-  flex-direction: row;
-  gap: 9px;
-  padding: 14px 17px 14px 17px;
+  flex-direction: column;
   align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 33px;
+  margin-left: 33px;
+  gap: 9px;
+  cursor: pointer;
 }
 
 .floppy {
-  width: 21px;
-  height: 21px;
+  width: 28px;
+  height: 28px;
 }
 
 .memory__button {
   font-family: var(--font-button);
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
+}
+
+.dialog {
+  border: solid 2px var(--border-color);
+  padding: 30px 0px;
+  max-width: 353px;
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dialog_block {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 24px;
+  padding-right: 10px;
+}
+
+.dialog__floppy {
+  width: 167px;
+  height: 40px;
+}
+
+.dialog__text {
+  font-family: var(--font-dialog);
+  font-size: var(--dialog-font-size);
+  font-weight: var(--dialog-font-weight);
+  line-height: 150%;
+}
+
+.dialog_button {
+  font-family: var(--font-button);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  background: transparent;
+  padding: 10px 113px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+@media (width > 375px) {
+  .header {
+    inline-size: clamp(375px, 90%, 700px);
+  }
+
+  .header__title {
+    margin-top: 128px;
+  }
+
+  .header__content {
+    margin-bottom: 128px;
+  }
+
+  .card {
+    inline-size: clamp(375px, 90%, 700px);
+  }
+
+  .dialog__button {
+    flex-direction: row;
+    padding: 15px 19px;
+  }
+
+  .floppy {
+    width: 21px;
+    height: 21px;
+  }
+
+  .label {
+    right: 28px;
+    top: 26px;
+  }
 }
