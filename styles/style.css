@@ -196,7 +196,12 @@
   border: none;
   cursor: pointer;
   padding-right: 4px;
+  transition: border 0.3s ease;
+}
 
+.card__icon-button:focus-visible {
+  outline: none;
+  border: solid 2px var(--border-color);
 }
 
 .card__like-button {
@@ -237,7 +242,7 @@
   transform: translateX(0);
 }
 
-.card__like-button:focus-visible {
+.card__like-button:focus {
   outline: none;
   box-shadow: 2px 2px 0 var(--border-color);
 }
@@ -281,7 +286,7 @@
   transform: translateX(0);
 }
 
-.dialog__button:focus-visible {
+.dialog__button:focus {
   outline: none;
   box-shadow: 2px 2px 0 var(--border-color);
 }
@@ -311,6 +316,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.dialog::backdrop {
+  background-color: #000000;
+  opacity: 0.6;
 }
 
 .dialog__block {
@@ -363,7 +373,7 @@
   transform: translateX(0);
 }
 
-.agreement__button:focus-visible {
+.agreement__button:focus {
   outline: none;
   box-shadow: 2px 2px 0 var(--border-color);
 }
