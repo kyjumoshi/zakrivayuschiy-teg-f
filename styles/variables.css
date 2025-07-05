@@ -16,9 +16,14 @@
   --header-color: #000;
   --content-color: #000;
   --border-color:#000;
+  --button-text-color: #fff;
   --header-bg-color: #fff;
   --content-bg-color: #fff;
   --button-bg-color: #fff;
+  --lable-shadow-color: #fff;
+  --heart-color: #ff0000;
+  --heart-hover-color: #000;
+  --heart-countur-color: #000;
   --font-content: "Inter-Variable";
   --content-font-weight: 400;
   --content-font-size: 18px;
