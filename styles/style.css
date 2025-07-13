@@ -68,10 +68,13 @@
 .content__title {
   font-size: var(--title-font-size);
   font-family: var(--font-content), sans-serif;
+  font-variation-settings: "wght" var(--font-content);
   font-weight: var(--title-font-weight);
   background: var(--content-bg-color);
   color: var(--content-color);
-  border: solid 2px var(--border-color);
+  border-top: solid 2px var(--border-color);
+  border-right: solid 2px var(--border-color);
+  border-left: solid 2px var(--border-color);
   padding: 6px 10px 4px 10px;
 }
 
@@ -121,6 +124,7 @@
   font-size: var(--content-font-size);
   font-family: var(--font-content), sans-serif;
   font-weight: var(--content-font-weight);
+  font-variation-settings: "wght" var(--font-content);
   padding: 23px 25px 5px 25px;
 }
 
@@ -250,7 +254,7 @@
   transform: translateX(0);
 }
 
-.card__like-button:focus {
+.card__like-button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--border-color);
 }
@@ -294,7 +298,7 @@
   transform: translateX(0);
 }
 
-.dialog__button:focus {
+.dialog__button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--border-color);
 }
@@ -380,7 +384,7 @@
   transform: translateX(0);
 }
 
-.agreement__button:focus {
+.agreement__button:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0 var(--border-color);
 }
