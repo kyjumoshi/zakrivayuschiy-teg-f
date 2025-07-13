@@ -108,8 +108,8 @@
 }
 
 .bus__img {
-  object-fit: cover;
-  object-position: center;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -125,7 +125,7 @@
   font-family: var(--font-content), sans-serif;
   font-weight: var(--content-font-weight);
   font-variation-settings: "wght" var(--font-content);
-  padding: 23px 25px 5px 25px;
+  padding: 24px 25px 5px 25px;
 }
 
 .sparks {
@@ -198,7 +198,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin: 19px 23px 20px 0px;
+  margin: 19px 25px 20px 0px;
 }
 
 .card__icon-button {
@@ -219,8 +219,10 @@
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   background-color: var(--button-bg-color);
-  padding-left: 37px;
-  padding-right: 37px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 3px;
+  max-height: 38px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
   position: relative;
@@ -269,11 +271,8 @@
   display: flex;
   border: 2px solid var(--border-color);
   flex-direction: column;
+  padding: 15px 20px;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-right: 33px;
-  margin-left: 33px;
   gap: 9px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
@@ -316,6 +315,7 @@
   border: solid 2px var(--border-color);
   padding: 30px 0px;
   max-width: 353px;
+  margin-bottom: 685px;
 }
 
 .dialog[open] {
@@ -333,8 +333,8 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding-left: 24px;
-  padding-right: 10px;
+  padding-left: 6px;
+  padding-right: 29px;
 }
 
 .dialog__floppy {
@@ -359,7 +359,7 @@
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   background: transparent;
-  padding: 10px 113px;
+  padding: 10px 131px;
   margin-top: 30px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
