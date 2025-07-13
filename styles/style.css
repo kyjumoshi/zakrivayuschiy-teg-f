@@ -16,7 +16,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-image: var(--bg-image);
+  background-image: var(--bg-gradient);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,19 +33,24 @@
 
 .header__title {
   font-size: var(--header-font-size);
-  font-family: var(--font-header);
+  font-family: var(--font-header), fantasy;
   font-weight: var(--header-font-weight);
   color: var(--header-color);
   margin: 120px 14px 0px 14px;
 }
 
+.small__letter {
+  text-transform: none;
+}
+
 .header__content {
   font-size: var(--header-content-font-size);
-  font-family: var(--font-header);
+  font-family: var(--font-header), fantasy;
   font-weight: var(--header-font-weight);
   color: var(--header-color);
   margin-top: 20px;
   margin-bottom: 120px;
+  text-transform: uppercase;
 }
 
 .main {
@@ -62,7 +67,7 @@
 
 .content__title {
   font-size: var(--title-font-size);
-  font-family: var(--font-content);
+  font-family: var(--font-content), sans-serif;
   font-weight: var(--title-font-weight);
   background: var(--content-bg-color);
   color: var(--content-color);
@@ -76,23 +81,32 @@
 
 .label {
   position: absolute;
-  font-family: var(--font-lable);
+  font-family: var(--font-lable), fantasy;
   font-size: var(--lable-font-size);
   font-weight: var(--lable-font-weight);
   color: var(--content-color);
-  text-shadow:
-    1px 1px 0 var(--lable-shadow-color),
-    1px -1px 0 var(--lable-shadow-color),
-    -1px 1px 0 var(--lable-shadow-color),
+  text-shadow: 1px 1px 0 var(--lable-shadow-color),
+    1px -1px 0 var(--lable-shadow-color), -1px 1px 0 var(--lable-shadow-color),
     -1px -1px 0 var(--lable-shadow-color);
   mix-blend-mode: hard-light;
   right: 12px;
   top: 24px;
 }
 
+@supports (
+  (text-stroke: 1px var(--bg-color)) or
+    (-webkit-text-stroke: 1px var(--bg-color))
+) {
+  .label {
+    text-shadow: none;
+    text-stroke: 1px var(--lable-shadow-color);
+    -webkit-text-stroke: 1px var(--lable-shadow-color);
+  }
+}
+
 .bus__img {
-  width: 100%;
-  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -105,16 +119,9 @@
 
 .description__text {
   font-size: var(--content-font-size);
-  font-family: var(--font-content);
+  font-family: var(--font-content), sans-serif;
   font-weight: var(--content-font-weight);
-  padding: 23px 25px 27px 25px;
-}
-
-.comment {
-  font-size: var(--content-font-size);
-  font-family: var(--font-content);
-  font-weight: var(--content-font-weight);
-  padding: 0px 25px 25px 25px;
+  padding: 23px 25px 5px 25px;
 }
 
 .sparks {
@@ -187,8 +194,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 23px;
-  margin-bottom: 20px;
+  margin: 19px 23px 20px 0px;
 }
 
 .card__icon-button {
@@ -205,7 +211,7 @@
 }
 
 .card__like-button {
-  font-family: var(--font-button);
+  font-family: var(--font-button), fantasy;
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   background-color: var(--button-bg-color);
@@ -215,7 +221,6 @@
   transition: box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
-  
 }
 
 .button__text {
@@ -223,6 +228,9 @@
   z-index: 2;
   color: var(--button-text-color);
   mix-blend-mode: difference;
+  font-family: var(--font-button), fantasy;
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
 }
 
 .card__like-button::before {
@@ -247,7 +255,7 @@
   box-shadow: 2px 2px 0 var(--border-color);
 }
 
-.footer {
+.memory__button {
   display: flex;
   flex-direction: column;
   margin-bottom: 102px;
@@ -300,12 +308,6 @@
   z-index: 2;
 }
 
-.memory__button {
-  font-family: var(--font-button);
-  font-size: var(--button-font-size);
-  font-weight: var(--button-font-weight);
-}
-
 .dialog {
   border: solid 2px var(--border-color);
   padding: 30px 0px;
@@ -320,7 +322,7 @@
 
 .dialog::backdrop {
   background-color: #000000;
-  opacity: 0.6;
+  opacity: 0.75;
 }
 
 .dialog__block {
@@ -337,14 +339,19 @@
 }
 
 .dialog__text {
-  font-family: var(--font-dialog);
+  font-family: var(--font-dialog), fantasy;
   font-size: var(--dialog-font-size);
   font-weight: var(--dialog-font-weight);
   line-height: 150%;
+  text-transform: uppercase;
+}
+
+.button__text-transform {
+  text-transform: uppercase;
 }
 
 .agreement__button {
-  font-family: var(--font-button);
+  font-family: var(--font-button), fantasy;
   font-size: var(--button-font-size);
   font-weight: var(--button-font-weight);
   background: transparent;
@@ -369,7 +376,7 @@
   z-index: 1;
 }
 
-.agreement__button:hover::before{
+.agreement__button:hover::before {
   transform: translateX(0);
 }
 
