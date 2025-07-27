@@ -157,7 +157,7 @@
   font-family: var(--font-content), sans-serif;
   font-weight: var(--content-font-weight);
   font-variation-settings: "wght" var(--content-font-weight);
-  padding: 24px 25px 6px 25px;
+  padding: 25px 25px 3px 25px;
 }
 
 .sparks {
@@ -237,12 +237,12 @@
   flex-direction: row;
   justify-content: flex-end;
   margin: 20px 25px 23px 0px;
-  gap: 6px;
+  gap: 5px;
 }
 
 .card__icon-button {
   background-color: transparent;
-  border: none;
+  border: 2px solid transparent;
   cursor: pointer;
   transition: border 0.3s ease;
   padding: 0;
@@ -259,6 +259,8 @@
   font-weight: var(--button-font-weight);
   background-color: var(--button-bg-color);
   border: solid 2px var(--border-color);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 .button::before {
@@ -288,8 +290,6 @@
   padding-right: 15px;
   padding-top: 1px;
   margin-bottom: 0px;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
   min-width: 130px;
@@ -336,7 +336,7 @@
 .dialog {
   border: solid 2px var(--border-color);
   padding: 30px 0px;
-  max-width: 353px;
+  max-width: 341px;
   margin: auto;
 }
 
@@ -356,8 +356,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
-  padding-left: 6px;
-  padding-right: 29px;
+  padding-left: 16px;
 }
 
 .dialog__floppy {
@@ -378,7 +377,7 @@
 }
 
 .agreement__button {
-  padding: 10px 131px;
+  padding: 10px 113px;
   margin-top: 30px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
@@ -401,6 +400,20 @@
 
   .card {
     inline-size: clamp(375px, 90%, 700px);
+  }
+
+  .dialog {
+    max-width: 353px;
+    padding: 30px 0px;
+  }
+
+  .agreement__button {
+    padding: 10px 131px;
+  }
+
+  .dialog__block {
+    padding-left: 6px;
+    padding-right: 30px;
   }
 
   .dialog__button {

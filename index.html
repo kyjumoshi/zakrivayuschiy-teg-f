@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="./svg/favicon.svg" sizes="any" />
-    <link rel="apple-touch-icon" href="./svg/favicon.svg">
+    <link rel="icon" href="./svg/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="./svg/favicon.png">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -464,14 +464,14 @@
           </div>
         </div>
       </article>
-      <article class="memory__button">
+      <div class="memory__button">
       <button class="dialog__button button" type="button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39 39" class="floppy">
           <use href="./svg/floppy.svg#floppy" />
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-    </article>
+    </div>
       <dialog id="dialog-id" class="dialog">
       <div class="dialog__block">
         <svg class="dialog__floppy" viewBox="0 0 39 39" width="39" height="39" xmlns="http://www.w3.org/2000/svg">
